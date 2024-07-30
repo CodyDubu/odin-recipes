@@ -23,13 +23,19 @@ h1 {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
 }
+h2 {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
 ul, ol {
-    list-style: none;
     padding: 20px 0;
 }
 li {
     padding: 10px 0;
-}   
+}  
+p {
+    padding: 20px 0;
+}
 img {
     width: 100%;
     height: auto;
@@ -39,4 +45,39 @@ img {
     flex-direction: column;
     justify-content: center;
     padding: 1.2em 0;
+}
+.links a {
+    color: #000;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.img-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2em 0;
+}
+.img-desc img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    width: 100%;
+    height: auto;   
+}
+.img-desc p {
+    padding: 0 20px;    
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    .img-desc {
+        flex-direction: column;
+    }
+    .img-desc img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        height: auto;   
+    }
+    .img-desc p {
+        padding:20px 0;
+    }
 }
